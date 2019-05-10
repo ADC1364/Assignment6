@@ -7,7 +7,7 @@ public class PointState extends State {
 //	    match of previous roll Win ("hits the points")
 //	    any other, roll again
 	// ------------------------------------------------------------------------    
-	    private int points_to_match;
+	    static private int points_to_match;
 
 	    public PointState(State source) {
 	        super(source);
@@ -32,7 +32,6 @@ public class PointState extends State {
 	    		getContext().setState(new Win(this));
 	    	}
 	    	else {
-	    		getContext().setState(new PointState(this));
 	    		getContext().rollDice();
 	    	}
 	    	
