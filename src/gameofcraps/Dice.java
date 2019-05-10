@@ -43,6 +43,6 @@ public class Dice {
 	    	
 	    	
 			return current_roll;  }
-	    // randmomly generated number between 2-12
+	    // Randomly generated number between 2-12
 	    
 	}

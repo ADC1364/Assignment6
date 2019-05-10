@@ -95,7 +95,7 @@ public class GameOfCraps {
            dice.rollDice();
        
        if(dice.getState() instanceof Win)
-    	   System.out.println("Won on a roll of: "+ dice.getCurrentRoll()+ " !");
+    	   System.out.println("Won on a roll of: "+ dice.getCurrentRoll()+ "!");
        else if(dice.getState() instanceof Loss)
     	   System.out.println("Loss on a roll of: "+ dice.getCurrentRoll()+ ", better luck next time.");
    }
